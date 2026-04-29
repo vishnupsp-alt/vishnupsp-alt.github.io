@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vishnu Pratap Singh Parihar</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -12,16 +14,18 @@
 
     <header>
       <nav>
-        <a href="#About">About</a>
-        <a href="#Research">Research</a>
-        <a href="#Publications">Publications</a>
-        <a href="#Education">Education</a>
-        <a href="#Teaching">Teaching</a>
-        <a href="#Contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#contact">Contact</a>
       </nav>
     </header>
 
-    <section id="About" class="hero">
+    <!-- HERO / ABOUT -->
+    <section id="about" class="hero">
       <div class="intro">
         <h1>Vishnu Pratap Singh Parihar</h1>
         <p class="subtitle">
@@ -29,29 +33,21 @@
         </p>
 
         <p>
-          I work on <strong>Risk-Aware Efficient Deep Learning</strong> and <strong>Reliable Visual Intelligence</strong>, with a focus on
-          model compression, robustness under domain shift, tail-risk control, and efficient vision-language models.
+          I am a PhD researcher working at the intersection of <strong>computer vision</strong>, <strong>model compression</strong>, and <strong>reliable deep learning</strong>. My research focuses on making visual intelligence systems—CNNs, Vision Transformers (ViTs), and large Vision-Language Models (VLMs)—both <em>efficient</em> and <em>trustworthy</em> under real-world variability and distribution shift.
         </p>
 
         <p>
-          My current research develops <strong>Risk-Aware Vetting (RAV)</strong>, a tail-risk-aware framework
-          for reliable layer collapse under heterogeneous domain shifts. I am also exploring dynamic visual token
-          reduction for large multimodal models such as LLaVA.
+          My current work develops <strong>Risk-Aware Vetting (RAV)</strong>, a tail-risk-aware framework for reliable structural pruning of neural networks under heterogeneous domain shifts, validated across CNNs and ViTs on benchmarks such as PACS and OfficeHome. In parallel, I am designing <strong>DynaPruMerge</strong>, a decode-aware dynamic visual token reduction method for large multimodal models (LLaVA-7B, LLaVA-13B, LLaVA-NeXT), targeting efficient and context-preserving generative visual reasoning.
         </p>
 
         <p>
-          Advisors:
-          <a href="https://www.iitr.ac.in/~MA/Malikfma">Prof. Sanjeev Kumar</a> and
-          <a href="https://faculty.iitr.ac.in/cs/bala/">Prof. Balasubramanian Raman</a>.
+          I am advised by <a href="https://www.iitr.ac.in/~MA/Malikfma">Prof. Sanjeev Kumar</a> (Head, DS&AI, IIT Roorkee) and <a href="https://faculty.iitr.ac.in/cs/bala/">Prof. Balasubramanian Raman</a> (Head, CSE, IIT Roorkee). Prior to my PhD, I was a Junior Research Fellow at DRDO's Naval Science & Technological Laboratory (NSTL), Visakhapatnam, where I worked on applied statistical modeling for maritime defense systems.
         </p>
 
         <p class="links">
-          <a href="assets/cv.pdf">CV</a> /
-          <a href="mailto:vishnu_psp@mfs.iitr.ac.in">Email</a> /
-          
-          
-          <a href="https://www.linkedin.com/in/vishnu-pratap-singh-parihar-8933a688">LinkedIn</a> 
-          
+          <a href="assets/cv.pdf">CV</a> &middot;
+          <a href="mailto:vishnu_psp@mfs.iitr.ac.in">Email</a> &middot;
+          <a href="https://www.linkedin.com/in/vishnu-pratap-singh-parihar-8933a688">LinkedIn</a>
         </p>
       </div>
 
@@ -60,119 +56,226 @@
       </div>
     </section>
 
-    <section id="Research">
+    <!-- RESEARCH -->
+    <section id="research">
       <h2>Research</h2>
       <p>
-        My research goal is to design efficient AI systems that remain reliable under real-world variability,
-        distribution shift, and resource constraints.
+        My overarching goal is to develop AI systems that are simultaneously <em>efficient</em>, <em>reliable</em>, and <em>generalizable</em>—capable of performing under distribution shift and resource constraints, not just on controlled benchmarks. I approach this through the lens of risk-sensitive statistics, optimization, and modern deep learning for visual understanding.
       </p>
 
-      <ul>
-        <li><strong>Efficient Deep Learning:</strong> model compression, layer collapse, pruning, and scalable architectures.</li>
-        <li><strong>Reliability and Robustness:</strong> tail-risk control, domain generalization, and distribution-sensitive evaluation.</li>
-        <li><strong>Vision-Language Models:</strong> dynamic visual token reduction for efficient multimodal reasoning.</li>
-        <li><strong>Risk-Aware Learning:</strong> risk-sensitive decision rules for trustworthy model adaptation.</li>
-      </ul>
-    </section>
-
-    <section id="Publications">
-      <h2>Publications & Manuscripts</h2>
-
-      <div class="paper">
-        <p>
-          <strong>RAV: Risk-Aware Vetting for Layer Collapse under Heterogeneous Domain Shifts</strong><br />
-          V. P. S. Parihar, Sanjeev Kumar, Balasubramanian Raman<br />
-          <em>Under Review, ECCV 2026</em>
-        </p>
-      </div>
-
-      <div class="paper">
-        <p>
-          <strong>DynaPruMerge: Decode-Aware Dynamic Visual Token Reduction in Large Multimodal Models</strong><br />
-          V. P. S. Parihar, Sanjeev Kumar, Balasubramanian Raman<br />
-          <em>Manuscript in Preparation, 2026</em>
-        </p>
+      <div class="research-areas">
+        <div class="research-item">
+          <span class="tag">Model Compression &amp; Pruning</span>
+          <p>Structural pruning, layer collapse, and efficient neural architecture design for CNNs and Vision Transformers. Emphasis on preserving task performance under domain heterogeneity.</p>
+        </div>
+        <div class="research-item">
+          <span class="tag">Risk-Aware &amp; Reliable Learning</span>
+          <p>Tail-risk control using Conditional Value-at-Risk (CVaR), distribution-sensitive evaluation, and risk-sensitive decision rules for trustworthy model adaptation and compression.</p>
+        </div>
+        <div class="research-item">
+          <span class="tag">Vision-Language Models</span>
+          <p>Dynamic visual token reduction for LLaVA architectures; decode-aware mechanisms that preserve critical visual evidence during generative multimodal reasoning.</p>
+        </div>
+        <div class="research-item">
+          <span class="tag">Domain Generalization</span>
+          <p>Robustness under domain shift, benchmarking on PACS and OfficeHome, and principled frameworks to prevent hidden failures in compressed models across heterogeneous data distributions.</p>
+        </div>
       </div>
     </section>
 
-    <section id="Education">
-      <h2>Education</h2>
+    <!-- PUBLICATIONS -->
+    <section id="publications">
+      <h2>Publications &amp; Manuscripts</h2>
 
-      <p>
-        <strong>PhD in Data Science & Artificial Intelligence</strong>, IIT Roorkee (2023 - Present)<br />
-        Thesis (ongoing): Risk-Aware and Resource-Efficient Visual Intelligence<br />
-        Advisors:
-        <a href="https://www.iitr.ac.in/~MA/Malikfma">Prof. Sanjeev Kumar</a>,
-        <a href="https://faculty.iitr.ac.in/cs/bala/">Prof. Balasubramanian Raman</a>
-      </p>
+      <div class="paper">
+        <p class="paper-title">RAV: Risk-Aware Vetting for Layer Collapse under Heterogeneous Domain Shifts</p>
+        <p class="paper-authors">V. P. S. Parihar, Sanjeev Kumar, Balasubramanian Raman</p>
+        <p class="paper-meta"><em>Under Review, in top tier  2026</em></p>
+        <p class="paper-desc">Introduces Selective Domain Collapse (SDC) and a CVaR-based tail-risk framework for reliable structural pruning. Validated across CNNs and ViTs on PACS and OfficeHome domain-shift benchmarks.</p>
+      </div>
 
-      <p>
-        <strong>MSc in Applied Mathematics</strong>, IIT Mandi<br />
-        Thesis: Nonlinear dynamics in the study of birdsong
-      </p>
+      <div class="paper">
+        <p class="paper-title">DynaPruMerge: Decode-Aware Dynamic Visual Token Reduction in Large Multimodal Models</p>
+        <p class="paper-authors">V. P. S. Parihar, Sanjeev Kumar, Balasubramanian Raman</p>
+        <p class="paper-meta"><em>Manuscript in Preparation, 2026</em></p>
+        <p class="paper-desc">Proposes decode-aware visual token pruning and merging for LLaVA-7B, LLaVA-13B, and LLaVA-NeXT to reduce computational cost while preserving generative visual reasoning quality.</p>
+      </div>
 
-      <p>
-        <strong>BSc in Mathematics & Statistics</strong>, CSJMU Kanpur
-      </p>
+      <div class="paper">
+        <p class="paper-title">Advanced Statistical Trajectory Estimation and Multi-target Allocation Frameworks</p>
+        <p class="paper-authors">V. P. S. Parihar and Systems Engineering Group (NSTL)</p>
+        <p class="paper-meta"><em>Internal Technical Report, DRDO (Classified), 2023</em></p>
+      </div>
+
+      <div class="paper">
+        <p class="paper-title">Nonlinear Dynamics in the Study of Birdsong</p>
+        <p class="paper-authors">V. P. S. Parihar</p>
+        <p class="paper-meta"><em>M.Sc. Thesis, IIT Mandi, 2019</em></p>
+        <p class="paper-desc">Mathematical modeling of chaotic phenomena in avian vocalizations using differential equations and bifurcation analysis.</p>
+      </div>
     </section>
 
-    <section id="Experience">
+    <!-- EXPERIENCE -->
+    <section id="experience">
       <h2>Experience</h2>
 
-      <p>
-        <strong>Doctoral Researcher</strong>, IIT Roorkee<br />
-        Working on risk-aware model compression, efficient deep learning, reliable AI, and multimodal learning.
-      </p>
+      <div class="exp-item">
+        <div class="exp-header">
+          <span class="exp-role">Doctoral Researcher</span>
+          <span class="exp-date">July 2023 – Present</span>
+        </div>
+        <div class="exp-place">IIT Roorkee · Mehta Family School of DS &amp; AI</div>
+        <ul>
+          <li>Developing RAV, a CVaR-based risk-aware framework for reliable structural pruning of CNNs and ViTs under domain shift.</li>
+          <li>Designing DynaPruMerge for dynamic visual token reduction in LLaVA multimodal architectures.</li>
+          <li>Training and evaluating multi-billion parameter Vision-Language Models on HPC clusters (ParamGanga, departmental nodes).</li>
+          <li>Mentoring M.Tech and B.Tech students in deep learning, Vision Transformers, and efficient VLMs.</li>
+        </ul>
+      </div>
 
-      <p>
-        <strong>Junior Research Fellow</strong>, DRDO NSTL<br />
-        Worked on applied research, statistical modeling, system monitoring, and field data analytics for maritime systems.
-      </p>
+      <div class="exp-item">
+        <div class="exp-header">
+          <span class="exp-role">Junior Research Fellow (JRF)</span>
+          <span class="exp-date">Nov 2022 – June 2023</span>
+        </div>
+        <div class="exp-place">DRDO · Naval Science &amp; Technological Laboratory (NSTL), Visakhapatnam</div>
+        <ul>
+          <li>Core team member for on-board maritime trials of the indigenous heavyweight torpedo <em>Varunastra</em>, including the June 2023 live-warhead testing.</li>
+          <li>Contributed to mathematical modeling and statistical trajectory estimation for the Weapon Target Allocation (WTA) problem.</li>
+          <li>Executed field data validation and performance analysis during high-stakes sea trials.</li>
+        </ul>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-header">
+          <span class="exp-role">M.Sc. Research</span>
+          <span class="exp-date">July 2018 – May 2019</span>
+        </div>
+        <div class="exp-place">IIT Mandi · Department of Mathematics</div>
+        <ul>
+          <li>Investigated nonlinear and chaotic phenomena in avian vocalizations using dynamical systems theory and time-series analysis.</li>
+          <li>Applied bifurcation analysis and differential equations to study biological system stability.</li>
+        </ul>
+      </div>
     </section>
 
-    <section id="Teaching">
-      <h2>Teaching & Mentorship</h2>
-      <p>
-        Graduate Teaching Assistant at IIT Roorkee for Programming in Python, Discrete Structures,
-        Data Structures & Algorithms, and Introduction to Data Science.
-      </p>
-      <p>
-        Mentored students in mathematics, machine learning, deep learning, and competitive examination preparation.
-      </p>
+    <!-- EDUCATION -->
+    <section id="education">
+      <h2>Education</h2>
+
+      <div class="edu-item">
+        <div class="exp-header">
+          <span class="exp-role">PhD in Data Science &amp; Artificial Intelligence</span>
+          <span class="exp-date">2023 – Present</span>
+        </div>
+        <div class="exp-place">Indian Institute of Technology Roorkee</div>
+        <p>Thesis: <em>Risk-Aware Efficient Deep Learning for Reliable Visual Systems</em><br>
+        Advisors: <a href="https://www.iitr.ac.in/~MA/Malikfma">Prof. Sanjeev Kumar</a> &amp; <a href="https://faculty.iitr.ac.in/cs/bala/">Prof. Balasubramanian Raman</a></p>
+      </div>
+
+      <div class="edu-item">
+        <div class="exp-header">
+          <span class="exp-role">MSc in Applied Mathematics</span>
+          <span class="exp-date">2017 – 2019</span>
+        </div>
+        <div class="exp-place">Indian Institute of Technology Mandi</div>
+        <p>Thesis: <em>Nonlinear dynamics in the study of birdsong</em><br>
+        Advisors: Prof. Padmanabhan Rajan (EE) &amp; Prof. Nitu Kumari (Mathematics)</p>
+      </div>
+
+      <div class="edu-item">
+        <div class="exp-header">
+          <span class="exp-role">BSc in Mathematics &amp; Statistics</span>
+          <span class="exp-date"></span>
+        </div>
+        <div class="exp-place">CSJMU Kanpur</div>
+        <p>Qualified IIT-JAM Mathematics (All India Rank 313, JAM-17)</p>
+      </div>
     </section>
 
-    <section id="Awards">
-      <h2>Honors & Awards</h2>
+    <!-- TEACHING -->
+    <section id="teaching">
+      <h2>Teaching &amp; Mentorship</h2>
+
+      <div class="exp-item">
+        <div class="exp-header">
+          <span class="exp-role">Graduate Research Mentor</span>
+          <span class="exp-date">Feb 2026 – Present</span>
+        </div>
+        <div class="exp-place">MFSDSAI, IIT Roorkee</div>
+        <p>Supervising M.Tech and B.Tech cohorts in Deep Learning, Transformers, and Vision Transformers. Guiding M.Tech thesis on Efficient Vision-Language Models and coordinating weekly structured reviews for B.Tech students on Mathematics for Machine Learning.</p>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-header">
+          <span class="exp-role">Graduate Teaching Assistant</span>
+          <span class="exp-date">July 2024 – Present</span>
+        </div>
+        <div class="exp-place">MFSDSAI, IIT Roorkee</div>
+        <p>Courses: Programming in Python (DAC104), Discrete Structures (DAC201), Data Structures &amp; Algorithms (DAC513), Introduction to Data Science (DAI101). Weekly tutorials and technical evaluations.</p>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-header">
+          <span class="exp-role">Competitive Exam Coaching</span>
+          <span class="exp-date">2014 – 2022</span>
+        </div>
+        <div class="exp-place">Kanpur &amp; Remote</div>
+        <p>Mentored students in Mathematics and Physics for 10+2 board exams; provided coaching for NDA (Mathematics) and IIT-JEE Main, translating advanced calculus into accessible problem-solving strategies.</p>
+      </div>
+    </section>
+
+    <!-- HONORS -->
+    <section id="awards">
+      <h2>Honors &amp; Awards</h2>
       <ul>
-        <li>Junior Research Fellowship, DRDO, Ministry of Defence, India</li>
-        <li>Institute Assistantship, IIT Roorkee, Ministry of Education, India</li>
-        <li>Qualified GATE Mathematics and IIT JAM Mathematics</li>
+        <li><strong>Junior Research Fellowship (JRF)</strong> — DRDO, Ministry of Defence, India (2022)</li>
+        <li><strong>Institute Assistantship</strong> — IIT Roorkee, Ministry of Education, India (2023)</li>
+        <li><strong>GATE Mathematics</strong> — All India Rank 576 (GATE-22), 808 (GATE-23)</li>
+        <li><strong>IIT-JAM Mathematics</strong> — All India Rank 313 (JAM-17)</li>
+        <li>PhD interview shortlists: IIT Bombay (C-MINDS), IIT Delhi (Maths), IIT Guwahati (Maths)</li>
+        <li>Travel grant, IISc Bangalore — SPARC Course on Human Perception and Image Analysis (2025)</li>
       </ul>
     </section>
 
-    <section id="Skills">
+    <!-- SKILLS -->
+    <section id="skills">
       <h2>Technical Skills</h2>
-      <p>
-        Python, C, MATLAB, PyTorch, TensorFlow, Scikit-learn, HuggingFace Transformers,
-        Linux, Slurm, Docker, VS Code, Jupyter, Overleaf, HPC clusters, and GCP
-      </p>
+      <div class="skills-grid">
+        <div>
+          <strong>Languages</strong>
+          <p>Python, C, MATLAB</p>
+        </div>
+        <div>
+          <strong>Frameworks</strong>
+          <p>PyTorch, TensorFlow, Scikit-learn, HuggingFace Transformers</p>
+        </div>
+        <div>
+          <strong>Tools &amp; Platforms</strong>
+          <p>Docker, Slurm, VS Code, Jupyter, Overleaf, GitHub, Kaggle</p>
+        </div>
+        <div>
+          <strong>Compute</strong>
+          <p>HPC clusters (ParamGanga), GCP, Linux</p>
+        </div>
+      </div>
     </section>
 
-    <section id="Contact">
+    <!-- CONTACT -->
+    <section id="contact">
       <h2>Contact</h2>
       <p>
-        PhD Lab - 2, Mehta Family School of Data Science and Artificial Intelligence,<br />
-        Indian Institute of Technology Roorkee, India
+        PhD Lab – 2, Mehta Family School of Data Science and Artificial Intelligence,<br>
+        Indian Institute of Technology Roorkee – 247667, India
       </p>
       <p>
-        Email:
-        <a href="mailto:vishnu_psp@mfs.iitr.ac.in">vishnu_psp@mfs.iitr.ac.in</a>,
+        <a href="mailto:vishnu_psp@mfs.iitr.ac.in">vishnu_psp@mfs.iitr.ac.in</a> &middot;
         <a href="mailto:vishnupratap073@gmail.com">vishnupratap073@gmail.com</a>
       </p>
     </section>
 
     <footer>
-      <p> 2026, Vishnu Pratap Singh Parihar</p>
+      <p>&copy; 2026, Vishnu Pratap Singh Parihar</p>
     </footer>
 
   </div>
